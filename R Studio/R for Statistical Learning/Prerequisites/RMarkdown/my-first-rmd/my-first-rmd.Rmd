@@ -1,0 +1,55 @@
+---
+title: "My First RMarkdown"
+author: "Hannah"
+date: 'June 28, 2022'
+output: html_document
+---
+
+# Header 1
+
+Some text here.
+
+# Header 2
+
+Some text here.
+
+## Subheader
+
+Some text here. Some text here. Some text here. We could write **bold** text.
+We could also write *italic* text. Here we see a `monospace` font.
+
+- List element.
+- List element.
+- List element.
+
+- [Google](www.google.com)
+- [RMarkdown Documentation](http://rmarkdown.rstudio.com/)
+
+| A  | B  | C  |
+|----|----|----|
+| 1  | 2  | 3  |
+| do | re | mi |
+
+```{r}
+x = 1:20
+y = x * 3
+x + y
+```
+
+```{r, echo = FALSE, fig.height = 4, fig.width = 4}
+hist(y)
+```
+
+```{r, message = FALSE, warning = FALSE}
+z = c(1, 1, 2, 3, 5, 8)
+z + x
+```
+
+```{r, message = FALSE, warning = FALSE}
+library(readr)
+example.data = read.csv("example-data.csv")
+```
+
+```{r}
+example.data$y
+```
